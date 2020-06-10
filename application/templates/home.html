@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+<h3>Random post time!</h3>
+{% for post in posts %}
+    {{ post.title }}<br>
+    {{ post.first_name}} {{ post.last_name}}<br>
+    {{ post.content }}<br><br>
+{% endfor %}
+
+{% endblock %}
+
